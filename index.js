@@ -5,11 +5,11 @@ exports.handler = (event, context, callback) => {
     console.log('event', JSON.stringify(event));
     axios.get('https://www.imdb.com/title/' + event.imdbId).then(data => {
         const $ = cheerio.load(data.data);
-        let json = $('head > script[type="application/ld+json"]').html();
-        console.log('json', json);
+        let rawjson = $('head > script[type="application/ld+json"]').html();
+        console.log('json', rawjson);
         const response = {
             statusCode: 200,
-            body: JSON.stringify(json),
+            body: JSON.parse(rawjson),
         };
         callback(null, response);
     });
