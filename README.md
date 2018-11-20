@@ -1,7 +1,7 @@
 # imdb-api
 This aws lamdba function extracts the json data in an imdb webpage and returns it
 
-#Example Response
+# Example Response
 ```
 {
   "statusCode": 200,
@@ -198,7 +198,7 @@ This aws lamdba function extracts the json data in an imdb webpage and returns i
   }
 }
 ```
-#Paramters
+# Paramters
 Currently it only takes in one parameter, the IMDB ID. 
 ```
 {
