@@ -1,15 +1,16 @@
 {
   "name": "imdb-parser",
   "version": "1.0.0",
-  "description": "Grabs json for imdb movies",
+  "description": "Grabs json from IMDB",
   "main": "index.js",
   "dependencies": {
+    "axios": "^0.18.0",
     "cheerio": "^1.0.0-rc.2"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "dllz",
+  "license": "MIT"
 }
